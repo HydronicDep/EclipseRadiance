@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    margin: 20px auto;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+main > section > h1 {
+    padding: 25px;
+    text-align: center;
+}
+
+main > section > h2 {
+    padding: 25px;
+}
+
+main > section > p {
+    padding: 15px;
+    text-align: justify;
+}
