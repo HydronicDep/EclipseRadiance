@@ -5,28 +5,41 @@
     padding: 0px;
 }
 
+hr {
+    margin: 15px;
+}
+
 html, body {
     height: 100vh;
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: black linear-gradient(to bottom, var(--cor2), var(--cor5)) center center / cover no-repeat fixed;
 }
 
 main {
-    margin: 20px auto;
-    width: 90vw;
+    margin: 30px auto;
+    padding: 15px;
+    width: 85vw;
+    max-width: 992px;
     background-color: rgba(255, 255, 255, 0.76);
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
 }
 
 main > section > h1 {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    color: var(--cor6);
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+    transform: translate(0px, 5px);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.newsPaper {
+    transform: translate(0px, 5px);
 }
 
 main > section > h2 {
@@ -35,5 +48,18 @@ main > section > h2 {
 
 main > section > p {
     padding: 15px;
-    text-align: justify;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#contents {
+    width: 100%;
+    height: 900px;
+}
+
+.pageid {
+    display: block;
+    text-align: center;
+    list-style: none;
+
 }

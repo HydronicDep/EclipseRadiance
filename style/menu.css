@@ -2,10 +2,12 @@
 
 :root {
     --cor0: #004173;
-    --cor1: #0979b0;
-    --cor2: #0cb7f2;
-    --cor3: #7cdaf9;
-    --cor4: #b6ffff;
+    --cor1: #004377;
+    --cor2: #0979b0;
+    --cor3: #0cb7f2;
+    --cor4: #7cdaf9;
+    --cor5: #b6ffff;
+    --cor6: #dfffff;
 }
 
 header {
@@ -16,50 +18,104 @@ header {
     position: relative;
 }
 
-header > h1 {
+header > img {
     display: block;
     position: absolute;
-    width: 550px;
-    color: white;
-    text-shadow: 1px 1px 5px black;
-    font-size: 2em;
+    width: 80%;
+    height: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -50%);
+    overflow: clip;
 }
 
 nav {
     box-shadow: 1px 1px 5px black;
     top: 0px;
     position: sticky;
+    z-index: 1;
 }
 
-nav > ul {
-    padding: 15px;
+#buttonMenu, .circle {
+    display: block;
     background-color: var(--cor0);
-    list-style-type: none;
-    overflow: hidden;
-}
-
-nav > ul > li {
-    display: inline-block;
-}
-nav > ul > li > a {
-    padding: 25px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    padding: 10px;
+    text-align: center;
     text-decoration: none;
     color: var(--cor3);
+    cursor: pointer;
     text-shadow: 1px 1px 3px black;
 }
 
-nav > ul > li > a:hover {
-    background-image: linear-gradient(to bottom, transparent, transparent, var(--cor1));
+#buttonMenu:hover {
+    background-image: linear-gradient(to bottom, transparent, transparent, var(--cor2));
+}
+
+nav > ul, #buttonMenu {
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+
+nav > ul > li {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+
+nav > ul > li > a {
+    display: block;
+    margin: auto;
+    width: 220px;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.609);
+    transform: translate(0px, -8px);
+}
+
+.menuIcons {
+    transform: translate(0px, 6px);
+}
+
+nav > ul > li:hover {
+    background-color: var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor2), transparent, transparent, transparent, transparent, var(--cor2));
+    text-shadow: 1px 1px 5px rgb(121, 121, 121);
     cursor: pointer;
 }
 
 
+#menuWebsite {
+    display: none;
+}
 
+.downloadMenu {
+    display: none;
+}
 
+.upWebsite {
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    visibility: hidden;
+    text-decoration: none;
+} 
 
+.upWebsite.visible {
+    visibility: visible;
+}
+
+.circle {
+    border-radius: 25px;
+}
+/*
+::-webkit-scrollbar {
+    display: none;
+}
+*/
 
 
 

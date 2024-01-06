@@ -6,28 +6,36 @@
     <title>Eclipse Radiance</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.css" media="all">
+    <link rel="stylesheet" href="style/news.css">
     <link rel="stylesheet" href="style/media-query.css">
+    <script defer src="js/menu.js"></script>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Eclipse Radiance</h1>
+        <img src="imgs/LogoEclipse.png" alt="Logo of Server">
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Information</a></li>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Register</a></li>
+        <span class="material-symbols-outlined" id="buttonMenu" onclick="menuHamburguer()">menu</span>
+        <ul id="menuWebsite">
+            <li><a href="#"><span class="material-symbols-outlined menuIcons">newspaper</span> News</a></li>
+            <li><a href="#"><span class="material-symbols-outlined menuIcons">help</span> Server Information</a></li>
+            <li><a href="#"><span class="material-symbols-outlined menuIcons">account_circle</span> Login / Register</a></li>
+            <li class="downloadMenu"><a href="#"><span class="material-symbols-outlined menuIcons">download</span> Download</a></li>
         </ul>
     </nav>
     <main>
         <section>
-            <h1>Teste</h1>
-            <h2>Teste</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit cupiditate, provident soluta adipisci reiciendis dignissimos alias laboriosam expedita suscipit dolorum dicta rerum, sunt quidem iusto nemo officia accusamus, et quas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, adipisci! Neque error nesciunt ut debitis eum ratione quis ipsam, accusamus repudiandae dignissimos vel maxime tempore sapiente officia. Suscipit, recusandae officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam illo, sequi perferendis repudiandae atque. Quia eos perspiciatis sit totam illum, voluptatibus ullam? Dolor deserunt obcaecati magnam aut suscipit blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo deserunt unde, non ut repellendus nam, aliquam molestiae cumque excepturi minus, explicabo nostrum facere voluptates laudantium saepe ducimus nihil fugiat neque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et atque labore distinctio quis sit! Tenetur cum necessitatibus dolores culpa quidem quos sequi animi quam, quis exercitationem iure explicabo debitis at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore minima culpa maxime? Tempora aut delectus perspiciatis saepe, error, dicta corrupti qui sapiente quas incidunt debitis natus at facilis reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa totam quod cupiditate distinctio esse tenetur quos quas quia nam quidem impedit vitae sint vel repudiandae dolorum, ab soluta. Sapiente!</p>
+            <a href="#top" class="upWebsite"><span class="material-symbols-outlined circle">arrow_upward</span></a>
+            <h1>News <span class="material-symbols-outlined newsPaper">newspaper</span></h1>
+            <p>Click on the news to open more information about it.</p>
+            <hr>
+            <iframe src="contents/page0001.html" frameborder="0" id="contents" name="newsFrame"></iframe>
+            <ul class="pageid">
+                <li><a href="contents/page0002.html" target="newsFrame">1</a></li>
+            </ul>
         </section>
     </main>
     <footer>

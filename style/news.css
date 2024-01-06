@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container {
+    margin: 15px 0px;
+    display: block;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container > div > h2 {
+    padding: 10px;
+    text-shadow: 0px 2px 7px black;
+}
+
+h2 {
+    color: var(--cor5);
+    text-align: center;
+}
+
+.conteudo {
+    margin: 0px 5px;
+    background-color: var(--cor2);
+    height: 100px;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+}
+
+.container:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.conteudo > p {
+    padding: 10px;
+    text-align: justify;
+    color: var(--cor5);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.157);
+}

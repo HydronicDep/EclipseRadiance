@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Typical Divice Breakpoints 
+
+         Pequenas-Telas: ~~~ até 768px
+           Medias-Telas: Acima de 768px até 992px
+          Grandes-Telas: Acima de 992px até 1200px
+    Extra-Grandes-Telas: Acima de 1200px:
+*/
+
+@media screen and (min-width: 768px) {
+    #buttonMenu {
+        display: none;
+    }
+
+    #menuWebsite {
+        display: block;
+    }
+
+    #menuWebsite {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
