@@ -5,10 +5,6 @@
     padding: 0px;
 }
 
-hr {
-    margin: 15px;
-}
-
 html, body {
     height: 100vh;
 }
@@ -26,31 +22,8 @@ main {
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
 }
-
-main > section > h1 {
-    padding: 20px;
-    font-size: 2.5em;
-    text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
-    color: var(--cor5);
-    box-shadow: 1px 1px 5px black;
-    text-shadow: 1px 1px 7px rgb(0, 0, 0);
-    transform: translate(0px, 5px);
-    border-radius: 0px 0px 15px 15px;
-}
-
 .newsPaper {
     transform: translate(0px, 5px);
-}
-
-main > section > h2 {
-    padding: 25px;
-}
-
-main > section > p {
-    padding: 15px;
-    text-align: center;
-    font-size: 0.9em;
 }
 
 #contents {
