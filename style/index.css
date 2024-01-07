@@ -14,11 +14,11 @@ html, body {
 }
 
 body {
-    background: black linear-gradient(to bottom, var(--cor2), var(--cor5)) center center / cover no-repeat fixed;
+    background: black linear-gradient(to bottom, var(--cor1), var(--cor3)) center center / cover no-repeat fixed;
 }
 
 main {
-    margin: 30px auto;
+    margin: 50px auto;
     padding: 15px;
     width: 85vw;
     max-width: 992px;
@@ -29,11 +29,12 @@ main {
 
 main > section > h1 {
     padding: 20px;
+    font-size: 2.5em;
     text-align: center;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
-    color: var(--cor6);
+    color: var(--cor5);
     box-shadow: 1px 1px 5px black;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+    text-shadow: 1px 1px 7px rgb(0, 0, 0);
     transform: translate(0px, 5px);
     border-radius: 0px 0px 15px 15px;
 }

@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eclipse Radiance</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style/fonts.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/index.css" media="all">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/news.css">
     <link rel="stylesheet" href="style/media-query.css">
     <script defer src="js/menu.js"></script>
 </head>
+
 <body onresize="mudouTamanho()">
+    <div class="fakeHeader">
+        <div class="topImgLogo">
+            <img src="imgs/eidoesquerda.png" alt="Christmas little red riding hood body" class="apenasTablet">
+            <img src="imgs/LogoEclipse.png" alt="Logo of Server">
+            <img src="imgs/eidodireita.png" alt="Guan Yu body" class="apenasTablet">
+        </div>
+    </div>
     <header>
-        <img src="imgs/LogoEclipse.png" alt="Logo of Server">
+        <nav>
+            <span id="buttonMenu" onclick="menuHamburguer()">☰</span>
+            <ul id="menuWebsite">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Server Information</a></li>
+                <li><a href="#">Login / Register</a></li>
+                <li class="downloadMenu"><a href="#">Download</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <span class="material-symbols-outlined" id="buttonMenu" onclick="menuHamburguer()">menu</span>
-        <ul id="menuWebsite">
-            <li><a href="#"><span class="material-symbols-outlined menuIcons">newspaper</span> News</a></li>
-            <li><a href="#"><span class="material-symbols-outlined menuIcons">help</span> Server Information</a></li>
-            <li><a href="#"><span class="material-symbols-outlined menuIcons">account_circle</span> Login / Register</a></li>
-            <li class="downloadMenu"><a href="#"><span class="material-symbols-outlined menuIcons">download</span> Download</a></li>
-        </ul>
-    </nav>
     <main>
         <section>
-            <a href="#top" class="upWebsite"><span class="material-symbols-outlined circle">arrow_upward</span></a>
-            <h1>News <span class="material-symbols-outlined newsPaper">newspaper</span></h1>
+            <a href="#top" class="upWebsite"><span>▲</span></a>
+            <h1>News</h1>
             <p>Click on the news to open more information about it.</p>
             <hr>
             <iframe src="contents/page0001.html" frameborder="0" id="contents" name="newsFrame"></iframe>
-            <ul class="pageid">
-                <li><a href="contents/page0002.html" target="newsFrame">1</a></li>
-            </ul>
         </section>
     </main>
     <footer>
-        <p>All rights reserved, website created by <a href="https://github.com/HydronicDep" target="_blank">Hydronic</a> &copy;</p>
+        <p>All rights reserved, website created by <a href="https://github.com/HydronicDep" target="_blank">Hydronic</a>
+            &copy;</p>
     </footer>
 </body>
+
 </html>

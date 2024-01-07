@@ -8,18 +8,47 @@
     Extra-Grandes-Telas: Acima de 1200px:
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
+    .topImgLogo {
+        height: 250px;
+    }
+
+    .topImgLogo > img {
+        height: 250px;
+    }
+
     #buttonMenu {
         display: none;
     }
+    
 
-    #menuWebsite {
-        display: block;
+    #menuWebsite > li {
+        border: none;
     }
 
     #menuWebsite {
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: center;
+    }
+
+    .downloadMenu {
+        visibility: visible;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .topImgLogo > .apenasTablet {
+        visibility: visible;
+        display: block;
+    }
+    .topImgLogo {
+        height: 400px;
+    }
+
+    .topImgLogo > img {
+        height: 400px;
     }
 }
